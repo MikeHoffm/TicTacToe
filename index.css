@@ -73,6 +73,7 @@ body {
 /* Page Layout */
 header {
     border: 3px solid green;
+    font-size: 3em;
 }
 
 main{
@@ -102,7 +103,7 @@ button[class*="game"] {
 
 
 /* Game Board */
-/* .game-grid {
+ .game-grid {
     display: grid;
     border: 3px solid black;
     justify-content: center;
@@ -110,5 +111,14 @@ button[class*="game"] {
     height: 60vh;
     width: 60vw;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+} 
 
-} */
+.game-grid > div {
+    font-size: 9em;
+    border: 2px solid white;
+    background-color: gray;
+}
+
+.game-grid > div:hover {
+    background-color: rgb(165, 158, 158);
+}
